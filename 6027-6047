@@ -1,0 +1,124 @@
+#6027
+a=input('16진수로 변환할 10진수를 입력하세요 = ')
+a=int(a)
+print('변환된 16진수는 %x'%a)
+
+#6028
+a=input('16진수로 변환할 10진수를 입력하세요 = ')
+a=int(a)
+print('변환된 16진수는 %X'%a)
+
+#6029
+a=input('8진수로 변환할 16진수를 입력하세요 = ')
+a=int(a,16) #입력받은 16진수를 10진수로 변환.
+print('변환된 8진수는 %o'%a)
+
+#6030
+a=ord(input()) #ord()는 어떤 문자의 순서 위치 값(ordinal position)을 의미함. ASCII코드대로 A=65,B=66...임
+print(a)
+
+#6031
+a=int(input())
+print(chr(a))
+
+#6033
+a=ord(input())
+b=chr(a+1)
+print(b)
+
+#6034
+#정수 2개(a, b)를 입력받아 a에서 b를 뺀 차를 출력하는 프로그램을 작성해보자.
+a=int(a)
+b=int(b)
+print(a-b)
+
+#아래 코드처럼 리스트를 활용해서 12345를 1,2,3,4,5로 리스트에 저장함.
+num=12345
+x=[int (a) for a in str(num)]
+print(x)
+
+#6035
+a,b=input().split()
+a=float(a)
+b=float(b)
+print(a*b)
+
+a,b=input().split()
+b=int(b)
+print(a*b)
+
+a=int(input())
+b=input()
+print(a*b)
+
+#6038
+a,b=input().split()
+a=int(a)
+b=int(b)
+print(a**b)
+
+#6040
+a,b=input().split()
+a=int(a)
+b=int(b)
+print(a//b)
+
+#6041
+a,b=input().split()
+a=int(a)
+b=int(b)
+print(a%b)
+
+#6042
+a=input()
+a=float(a)
+print(format(a,'.2f')) #.2f 소수점 둘째자리까지 표시
+
+#6043
+a,b=input().split()
+a=float(a)
+b=float(b)
+print(a/b)
+
+#6044
+a,b=input().split()
+a=int(a)
+b=int(b)
+l=[]
+add=a+b
+sub=a-b
+mul=a*b
+div=a//b
+rest=a%b
+dire=a/b
+dire=format(dire,'.2f')
+l.append(add)
+l.append(sub)
+l.append(mul)
+l.append(div)
+l.append(rest)
+l.append(dire)
+for i in l:
+  print(i)
+
+#6045
+a,b,c=input().split()
+a=int(a)
+b=int(b)
+c=int(c)
+sum=a+b+c
+avg=format((a+b+c)/3,'.2f')
+print(sum,avg)
+
+#6046
+a=int(input())
+print(a<<1) #a를 2배
+print(a>>1) #a를 1/2
+#2,3을 넣으면 0이 나옴
+
+#6047
+#a<<b :a를 2의 b제곱한 것.
+a,b=input().split()
+a=int(a)
+b=int(b)
+print(a<<b)
